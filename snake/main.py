@@ -98,7 +98,6 @@ def change_rect():
 
 # score
 score = 0
-body_score = 2  # for endgame
 score_font = pygame.font.SysFont('consolas', 15)
 
 
@@ -106,7 +105,6 @@ def check_colision():
     global score, body_score, status
     if fruit_rect.x == head.x and fruit_rect.y == head.y:
         score += 1
-        body_score += 1
         status = 'yes'
         change_rect()
 
@@ -148,7 +146,7 @@ def show_end_text():
 dificulty = 150  # 300 super ez
 # 150 = normal
 # 100 = hard
-# 50 = hard
+# 50 = super hard
 # userevent
 SCREEN_UPDATE = pygame.USEREVENT
 pygame.time.set_timer(SCREEN_UPDATE, dificulty)
