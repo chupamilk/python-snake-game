@@ -20,7 +20,7 @@ Height = cell_size * cell_number
 
 # screen
 screen = pygame.display.set_mode((Widht, Height))
-icon = pygame.image.load('snake.png')
+icon = pygame.image.load('snake/snake.png')
 pygame.display.set_icon(icon)
 pygame.display.set_caption('snake')
 
